@@ -40,13 +40,6 @@ int FindText(string toFind, string usrStr) {
 
    return counter;
 }
-
-  
-/* size_t where = usrStr.find(toFind);
-  while (where != string::npos) {
-    counter++;
-    where = usrStr.find(toFind, where + 1);
-    } */ 
   
 void ReplaceExclamation(string& usrStr) {
    unsigned int i;
@@ -89,26 +82,6 @@ cout << endl;
 void ExecuteMenu(char option, string usrStr) {
    string toFind;
    int numFinds;
-  
-/* if(option == 'c') {
-            cout << "Number of non-whitespace characters: " << GetNumOfNonWSCharacters(usrStr) << endl; 
-  }
-  else if (option == 'w') {
-            cout << "Number of words: " << GetNumOfWords(usrStr) << endl; 
-  }
-  else if(option == 'f'){
-    cin.ignore();
-            cout << "Enter a word or phrase to be found:";
-            getline(cin, toFind);
-            cout << " " << toFind << " " << "counter: " << FindText(toFind, usrStr) << endl; 
-  }
-  else if(option == 'r'){
-    ReplaceExclamation(usrStr);
-            cout << "Edited text: " << usrStr << endl; 
-  }
-  else if(option =='s'){
-    ShortenSpace(usrStr);
-            cout << "Edited text: " << usrStr << endl; */
   
     switch (option) {
       case 'c':
